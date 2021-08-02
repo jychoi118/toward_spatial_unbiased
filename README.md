@@ -5,10 +5,16 @@ Implementation of Toward Spatially Unbiased Generative Models (ICCV 2021)
 ## Overview
 Recent image generation models show remarkable generation performance. However, they mirror strong location preference in datasets, which we call **spatial bias**. Therefore, generators render poor samples at unseen locations and scales. We argue that the generators rely on their implicit positional encoding to render spatial content. From our observations, the generator’s implicit positional encoding is translation-variant, making the generator spatially biased. To address this issue, we propose injecting explicit positional encoding at each scale of the generator. By learning the spatially unbiased generator, we facilitate the robust use of generators in multiple tasks, such as GAN inversion, multi-scale generation, generation of arbitrary sizes and aspect ratios. Furthermore, we show that our method can also be applied to denoising diffusion probabilistic models.
 
+### Generation
 Original StyleGAN2 | MS-PE + StyleGAN2
 :-------------------------:|:-------------------------:
-![a](docs/pretrained_orig_32px.gif) | ![b](docs/mspe_ffhq256_32px.gif)
-![c](docs/pretrained_orig_16px.gif) | ![d](docs/mspe_ffhq256_16px.gif)
+![a](gif/pretrained_orig_32px.gif) | ![b](gif/mspe_ffhq256_32px.gif)
+![c](gif/pretrained_orig_16px.gif) | ![d](gif/mspe_ffhq256_16px.gif)
+
+### GAN Inversion
+Input | Original StyleGAN2 | MS-PE + StyleGAN2
+:-------------------------:|:-------------------------:|:-------------------------:
+![e](gif/inverse_target.gif) | ![f](gif/inverse_orig.gif) | ![g](gif/inverse_mspe.gif)
 
 ## Requirements
 
