@@ -6,6 +6,7 @@ Implementation of Toward Spatially Unbiased Generative Models (ICCV 2021)
 Recent image generation models show remarkable generation performance. However, they mirror strong location preference in datasets, which we call **spatial bias**. Therefore, generators render poor samples at unseen locations and scales. We argue that the generators rely on their implicit positional encoding to render spatial content. From our observations, the generator’s implicit positional encoding is translation-variant, making the generator spatially biased. To address this issue, we propose injecting explicit positional encoding at each scale of the generator. By learning the spatially unbiased generator, we facilitate the robust use of generators in multiple tasks, such as GAN inversion, multi-scale generation, generation of arbitrary sizes and aspect ratios. Furthermore, we show that our method can also be applied to denoising diffusion probabilistic models.
 
 ### Generation
+Due to spatial bias, samples of the original GAN are either destructive or stuck to the center when generating from a shifted location.
 Original StyleGAN2 | MS-PE + StyleGAN2
 :-------------------------:|:-------------------------:
 ![a](gif/pretrained_orig_32px.gif) | ![b](gif/mspe_ffhq256_32px.gif)
