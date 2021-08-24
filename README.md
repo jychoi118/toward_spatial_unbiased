@@ -51,9 +51,11 @@ Set position to "none" for original StyleGAN2.
 ### Checkpoint
 [mspe](https://drive.google.com/file/d/1LkLQJW5gycW6Xr-Vw8r2SFK-IBQrZvXp/view?usp=sharing)
 
+256x256 StyleGAN2+MSPE trained on FFHQ for 750k iterations (batch 32)
+
 ## Notice
 Because the current FFHQ dataset is tightly cropped, we used circular translation for proof-of-concept. Therefore, our samples show reflection artifacts at the boundaries. We are looking forward to training on FFHQ-U from alias-free GAN (https://arxiv.org/abs/2106.12423).
 
 ## Acknowledgement
 
-This code rely heavily on: https://github.com/rosinality/stylegan2-pytorch
+This code relies heavily on: https://github.com/rosinality/stylegan2-pytorch
