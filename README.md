@@ -1,6 +1,6 @@
 # Toward Spatially Unbiased Generative Models
 
-Implementation of Toward Spatially Unbiased Generative Models (ICCV 2021)
+Implementation of [Toward Spatially Unbiased Generative Models](https://arxiv.org/abs/2108.01285) (ICCV 2021)
 
 ## Overview
 Recent image generation models show remarkable generation performance. However, they mirror strong location preference in datasets, which we call **spatial bias**. Therefore, generators render poor samples at unseen locations and scales. We argue that the generators rely on their implicit positional encoding to render spatial content. From our observations, the generator’s implicit positional encoding is translation-variant, making the generator spatially biased. To address this issue, we propose injecting explicit positional encoding at each scale of the generator. By learning the spatially unbiased generator, we facilitate the robust use of generators in multiple tasks, such as GAN inversion, multi-scale generation, generation of arbitrary sizes and aspect ratios. Furthermore, we show that our method can also be applied to denoising diffusion probabilistic models.
@@ -47,6 +47,9 @@ Set position to "none" for original StyleGAN2.
 ### GAN inversion
 
 > python projector.py --name EXPERIMENT_NAME --w_plus --ckpt 550000.pt --position mspe ref_face/00006.png 
+
+### Checkpoint
+[mspe](https://drive.google.com/file/d/1LkLQJW5gycW6Xr-Vw8r2SFK-IBQrZvXp/view?usp=sharing)
 
 ## Notice
 Because the current FFHQ dataset is tightly cropped, we used circular translation for proof-of-concept. Therefore, our samples show reflection artifacts at the boundaries. We are looking forward to training on FFHQ-U from alias-free GAN (https://arxiv.org/abs/2106.12423).
