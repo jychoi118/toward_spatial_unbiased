@@ -49,7 +49,7 @@ Set position to "none" for original StyleGAN2.
 > python projector.py --name EXPERIMENT_NAME --w_plus --ckpt 550000.pt --position mspe ref_face/00006.png 
 
 ### Checkpoint
-[mspe](https://drive.google.com/file/d/1LkLQJW5gycW6Xr-Vw8r2SFK-IBQrZvXp/view?usp=sharing)
+You can download our checkpoint: [mspe](https://drive.google.com/file/d/1LkLQJW5gycW6Xr-Vw8r2SFK-IBQrZvXp/view?usp=sharing)
 
 256x256 StyleGAN2+MSPE trained on FFHQ for 750k iterations (batch 32)
 
