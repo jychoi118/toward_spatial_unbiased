@@ -7,6 +7,7 @@ Recent image generation models show remarkable generation performance. However, 
 
 ### Generation
 Due to spatial bias, samples of the original GAN are either destructive or stuck to the center when generating from a shifted location.
+
 Original StyleGAN2 | MS-PE + StyleGAN2
 :-------------------------:|:-------------------------:
 ![a](gif/pretrained_orig_32px.gif) | ![b](gif/mspe_ffhq256_32px.gif)
